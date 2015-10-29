@@ -1,0 +1,26 @@
+{
+  "name": "my-ang-test",
+  "homepage": "https://github.com/jmennen/my-ang-test",
+  "authors": [
+    "jmennen <janmennen@gmx.de>"
+  ],
+  "description": "my first try to work with angular",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "bootstrap": "~3.3.5"
+  }
+}
