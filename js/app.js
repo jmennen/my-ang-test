@@ -1,21 +1,24 @@
+'use strict';
+
+/* App Module */
+
 var myAngApp = angular.module('myAngApp', [
   'ngRoute',
-  'myAngControllers',
-  'myAngFilters'
+  'myAngControllers'
 ]);
 
 myAngApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/', {
+      when('/list', {
         templateUrl: 'partials/list.html',
         controller: 'homeCtrl'
       }).
-      when('/details/:detailId', {
-        templateUrl: 'partials/detail.html',
+      when('/list/:detailId', {
+        templateUrl: 'partials/details.html',
         controller: 'detailCtrl'
       }).
       otherwise({
-        redirectTo: '/'
+        redirectTo: '/list'
       });
-  }]); 
+  }]);
